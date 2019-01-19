@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "799794822490",
+    "firebase_url": "https://myshop-22493.firebaseio.com",
+    "project_id": "myshop-22493",
+    "storage_bucket": "myshop-22493.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799794822490:android:09554e9010381985",
+        "android_client_info": {
+          "package_name": "com.helloworld.ma.practice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799794822490-m7ublv45qgpdu7jsjor48epp92jjsrdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwDkLHPKWJznu8mk4B_7-TTXRoBG80fH8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

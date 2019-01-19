@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Practice</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_edit_product_detail">Edit_product_detail</string>
+    <string name="title_activity_sign_up">Sign_up</string>
+    <string name="title_activity_products_page">Catorgery</string>
+    <string name="title_activity_add_product">Add_product</string>
+    <string name="title_activity_add_category_page">add_category_page</string>
+    <string name="message">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <string name="turn_off_flashlight">FlashLight on</string>
+    <string name="turn_on_flashlight">flashLight off</string>
+
+
+    <string name="text_no_data">No data is loaded. Please update!</string>
+    <string name="text_invoice_num">Invoice No:</string>
+    <string name="text_invoice_date">Date of issue:</string>
+    <string name="text_invoice_dateref">Reporting period:</string>
+    <string name="text_invoice_fixed_charge">Monthly and one-time charges</string>
+    <string name="text_invoice_discount">Discounts</string>
+    <string name="text_invoice_prev_amountdue">Obligations from the. period</string>
+    <string name="text_invoice_paid_amountdue">Payments made</string>
+    <string name="text_tot_no_vat">Amount excluding VAT</string>
+    <string name="text_vat"></string>
+    <string name="text_tot_vat">Amount including VAT</string>
+    <string name="text_invoice_total_dueamount">Total amount to pay with VAT</string>
+    <string name="text_invoice_invalid">The invoice contains invalid entries!</string>
+    <string name="text_invoice_status">Status</string>
+    <string name="text_invoice_status_paid">Paid</string>
+    <string name="text_invoice_status_notpaid">Unpaid</string>
+    <string name="text_invoice_duedate">Payment deadline:</string>
+    <string name="title_activity_items_list_page">Items</string>
+
+</resources>
