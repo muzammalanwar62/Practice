@@ -68,16 +68,8 @@ public class Async_get_product_by_id extends AsyncTask<String,Void,Void> {
             boolean inserted = new dbhelper(context).insert_product_toshoppingcart(productsList.get(0).product_name, productsList.get(0).product_price, productsList.get(0).product_image,1 , userinfo.get(0).email,productsList.get(0).product_weight, String.valueOf(productsList.get(0).id));
             if (inserted) {
                 Toast.makeText(context, "item inserted", Toast.LENGTH_LONG).show();
-                Cursor cursor= new dbhelper(context).select_product_by_name_and_weight(productsList.get(0).product_name,productsList.get(0).product_weight,String.valueOf(productsList.get(0).product_price));
-                if(cursor.getCount()>0){
-
-                      new dbhelper(context).update_quantity(cursor.getString(1),cursor.getString(6),cursor.getInt(2),cursor.getInt(4));
-                }
-                Intent intent = new Intent(context, items_list_page.class);
-                context.startActivity(intent);
-            } else {
+            }else{
                 Toast.makeText(context, "item not inserted", Toast.LENGTH_LONG).show();
-
             }
         }
     }

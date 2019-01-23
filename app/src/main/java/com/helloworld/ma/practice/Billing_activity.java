@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -25,6 +26,7 @@ String discount_rate;
 int total_price_of_item;
 int discounted_rate;
 int total_price_after_discount;
+TextView order_total_amount,order_discount,order_full_amount;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,12 +49,17 @@ int total_price_after_discount;
             }
             checkout_items_list.setAdapter(new purchased_item_adapter(products,this));
         }
+        order_discount=findViewById(R.id.order_discount);
+        order_full_amount=findViewById(R.id.order_full_amounts);
+        order_total_amount=findViewById(R.id.order_total_amount);
+
         discount_rate=getIntent().getStringExtra("dis");
         total_price_of_item=new dbhelper(Billing_activity.this).getTotalOfAmount(userinfo.get(0).email);
           discounted_rate=(Integer.parseInt(discount_rate)*total_price_of_item)/100;
         total_price_after_discount=total_price_of_item-discounted_rate;
-        Log.e("discounted_rate",discount_rate);
-        Log.e("total_price",String.valueOf(discounted_rate));
-        Log.e("total_price_after_dis",String.valueOf(total_price_after_discount));
+        order_discount.setText("Rs "+discounted_rate);
+        order_total_amount.setText("Rs "+String.valueOf(new dbhelper(Billing_activity.this).getTotalOfAmount(userinfo.get(0).email)));
+        order_full_amount.setText("Rs "+String.valueOf(total_price_after_discount));
+
     }
 }
